@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+
+spawn scp -r /home/tuo/Desktop/Share/webpage/index.html Research.html tli27@people.uic.edu:"/home/tli27/public_html/"
+expect "assword:"
+send "Li19860412\r"
+interact
+
+#spawn ssh tli27@login-1.extreme.uic.edu
+#expect "assword:"
+#send "Li19860412\r"
+#expect "$ " { send "cd QEpath\r" }
+#expect "$ " { send "qsub -V -l nodes=32,walltime=3:00:00:00,partition=ALL Agwf.sh\r" }
+#interact
+
+#-l procs=256
